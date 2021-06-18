@@ -1,0 +1,22 @@
+---
+title: "welcome"
+description: |
+  welcome to this site.
+author:
+  - name: Joshua O.S. Hunt
+date: 06-18-2021
+output:
+  distill::distill_article:
+    self_contained: false
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+This is actually my second attempt to buid this website :(
+
+
+
+

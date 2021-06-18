@@ -1,0 +1,16 @@
+name: "."
+title: "Professor-Hunt"
+description: |
+  MyWebsite
+output_dir: "docs"
+navbar:
+  logo:
+    image: Josh_logo.png
+  right:
+    - text: "Hunt"
+      href: index.html
+    - text: "About"
+      href: about.html
+    - text: "Blog"      
+      href: blog.html   
+output: distill::distill_article

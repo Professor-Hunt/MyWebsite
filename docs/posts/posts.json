@@ -1,0 +1,19 @@
+[
+  {
+    "path": "posts/2021-06-18-welcome/",
+    "title": "welcome",
+    "description": "welcome to this site.",
+    "author": [
+      {
+        "name": "Joshua O.S. Hunt",
+        "url": {}
+      }
+    ],
+    "date": "2021-06-18",
+    "categories": [],
+    "contents": "\r\nThis is actually my second attempt to buid this website :(\r\n\r\n\r\n\r\n",
+    "preview": {},
+    "last_modified": "2021-06-18T00:05:41-05:00",
+    "input_file": {}
+  }
+]

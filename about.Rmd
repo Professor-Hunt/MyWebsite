@@ -1,0 +1,17 @@
+---
+title: "About this site"
+description: |
+  Some additional details about the website
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Goals
+
+**Use this site as a spring board for my classes**
+
+**Use this site to display my work**
+
+It is currently under construction.

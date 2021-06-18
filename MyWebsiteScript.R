@@ -10,3 +10,7 @@ create_article(file = "Hunt",         # future name of .Rmd file
 create_post("welcome")
 #make a navigation option
 file.edit("blog.Rmd")
+
+#get this published
+usethis::use_git()
+usethis::use_github()

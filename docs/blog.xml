@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <title>Professor-Hunt</title>
+    <link>https://github.com/Professor-Hunt/MyWebsite</link>
+    <atom:link href="https://github.com/Professor-Hunt/MyWebsite/blog.xml" rel="self" type="application/rss+xml"/>
+    <description>Professor Hunt's website and blog that mainly features information about
+Accounting, data science, R and academia.
+</description>
+    <generator>Distill</generator>
+    <lastBuildDate>Fri, 18 Jun 2021 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>welcome</title>
+      <dc:creator>Joshua O.S. Hunt</dc:creator>
+      <link>https://github.com/Professor-Hunt/MyWebsite/posts/2021-06-18-welcome</link>
+      <description>welcome to this site.</description>
+      <guid>https://github.com/Professor-Hunt/MyWebsite/posts/2021-06-18-welcome</guid>
+      <pubDate>Fri, 18 Jun 2021 00:00:00 +0000</pubDate>
+    </item>
+  </channel>
+</rss>

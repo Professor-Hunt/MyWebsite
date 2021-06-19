@@ -4,6 +4,7 @@ description: |
   Professor Hunt's website and blog that mainly features information about
   Accounting, data science, R and academia.
 output_dir: "docs"
+base_url: https://github.com/Professor-Hunt/MyWebsite 
 navbar:
   logo:
     image: Josh_logo.png

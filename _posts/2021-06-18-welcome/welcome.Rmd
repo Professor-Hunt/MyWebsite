@@ -15,7 +15,7 @@ output:
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-This is actually my second attempt to buid this website :(
+This is actually my second attempt to build this website :(
 
 
 

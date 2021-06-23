@@ -15,34 +15,32 @@ output:
 site: distill::distill_website
 ---
 
-## Bio
+## General Info
 
 Joshua Hunt is an assistant professor at [Mississippi State University](https://www.business.msstate.edu/academics/adkerson-school-accountancy) in the accounting department. He teaches accounting systems 2, which is transitioning to an introduction to accounting data analytics, and he teaches a masters level accounting data analytics course. He has is married with two boys under 2 and he loves it.
 
 ## Education
 
-**University of Arkansas**
+#### **University of Arkansas**
 
-Ph.D. in Accounting \| 2013-2018
+PhD in Accounting \| 2013-2018
 
-**University of Arkansas**
+MS in Analytics and Statistics \| 2017
 
-M.S. in Analytics and Statistics \| 2017
+MS in Accounting \| 2012
 
-**University of Arkansas**
+#### **Louisiana Tech University**
 
-M.S. in Accounting \| 2012
+MAT in Teaching \| 2009-2010
 
-**Louisiana Tech university**
-
-M.S. in Teaching \| 2009-2010
-
-**Louisiana Tech university**
-
-B.S. in Mathematics \| 2004-2008
+BS in Mathematics \| 2004-2008
 
 ## Research Interests
 
-**Data Analytics** Machine Learning, Model evaluation, Robotic Process Automation, and Communication
+#### **Data Analytics** 
 
-**Accounting** Earnings/Return Relation, Audit Quality, and Methodology
+Machine Learning, Model evaluation, Robotic Process Automation, and Communication
+
+#### **Accounting** 
+
+Earnings/Return Relation, Audit Quality, and Methodology

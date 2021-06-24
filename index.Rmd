@@ -37,10 +37,10 @@ BS in Mathematics \| 2004-2008
 
 ## Research Interests
 
-#### **Data Analytics** 
+#### **Data Analytics**
 
 Machine Learning, Model evaluation, Robotic Process Automation, and Communication
 
-#### **Accounting** 
+#### **Accounting**
 
 Earnings/Return Relation, Audit Quality, and Methodology

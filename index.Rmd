@@ -29,7 +29,7 @@ My Boys
 
 <p>
 
-```{r My_Boys, echo=FALSE, fig.cap="loads of fun", out.width = '100%'}
+```{r My_Boys, echo=FALSE, fig.cap="loads of fun", out.width = '80%'}
 knitr::include_graphics("My_Boys.png")
 ```
 

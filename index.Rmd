@@ -17,7 +17,25 @@ site: distill::distill_website
 
 ## General Info
 
-Joshua Hunt is an assistant professor at [Mississippi State University](https://www.business.msstate.edu/academics/adkerson-school-accountancy) in the accounting department. He teaches accounting systems 2, which is transitioning to an introduction to accounting data analytics, and he teaches a masters level accounting data analytics course. He has is married with two boys under 2 and he loves it.
+Joshua Hunt is an assistant professor at [Mississippi State University](https://www.business.msstate.edu/academics/adkerson-school-accountancy) in the accounting department. He teaches accounting systems 2, which is transitioning to an introduction to accounting data analytics, and he teaches a masters level accounting data analytics course. He has is married with two boys under 2 and he loves it 😄 .
+
+<details>
+
+<summary>
+
+My Boys
+
+</summary>
+
+<p>
+
+```{r My_Boys, echo=FALSE, fig.cap="loads of fun", out.width = '100%'}
+knitr::include_graphics("My_Boys.png")
+```
+
+</p>
+
+</details>
 
 ## Education
 

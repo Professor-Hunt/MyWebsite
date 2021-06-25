@@ -8,7 +8,15 @@
 Accounting, data science, R and academia.
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Fri, 18 Jun 2021 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 25 Jun 2021 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>RMarkdown Editor</title>
+      <dc:creator>Joshua O.S. Hunt</dc:creator>
+      <link>https://github.com/Professor-Hunt/MyWebsite/posts/2021-06-25-rmarkdown-editor</link>
+      <description>Update on course construction using RMarkdown Editor in RStudio.</description>
+      <guid>https://github.com/Professor-Hunt/MyWebsite/posts/2021-06-25-rmarkdown-editor</guid>
+      <pubDate>Fri, 25 Jun 2021 00:00:00 +0000</pubDate>
+    </item>
     <item>
       <title>welcome</title>
       <dc:creator>Joshua O.S. Hunt</dc:creator>

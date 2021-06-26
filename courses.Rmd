@@ -1,7 +1,7 @@
 ---
 title: "Courses"
 description: |
-  Description and link to my course.
+  Description and link to my courses.
 output: distill::distill_article
 ---
 
@@ -11,7 +11,7 @@ knitr::opts_chunk$set(echo = FALSE)
 
 # ACC 3053 Systems 2
 
-# Introduction to Accounting Analytics
+# Introduction to Accounting Data Analytics
 
 Students will use SQLite and DBbrowser for ETL (extraction, transformation, and loading data). Students will create a relational database with SQLite and use SQL query language to interact within this database. They will also connect this database with R statistical software. Students will use R statistical software for ETL. Specifically, R and RStudio (GUI for R) will be used in conjunction with Tidyverse R packages for basic data manipulation and visualizations. Using R forces students to use critical thinking in order to program and trouble shoot errors. Students will also learn Markdown which is a framework for presenting interactive reports will rich visuals. This will help students learn the value of presenting information in a business analytics context. Excel will be used to compare and contrast R and SQL programming. Students will perform advanced Excel tasks such as, but not limited to, pivot tables, vlookup, nested formulas, and dashboard creation.
 

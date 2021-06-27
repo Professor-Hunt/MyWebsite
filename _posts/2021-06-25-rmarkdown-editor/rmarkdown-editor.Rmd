@@ -33,3 +33,4 @@ All that being said this post is about the RMarkdown Editor in Rstudio. I am bui
 ## Button
 
 The button gives you a "normal" text editor for RMarkdown. This makes creating anything from reports to websites VERY easy. If you need to code the document you switch back to RMarkdown default, but if you just want to type and insert pictures etc the text editor is AWESOME 🥳
+

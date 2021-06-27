@@ -1,0 +1,28 @@
+---
+title: "Research"
+description: |
+  Publications, working papers, and works in process.
+author:
+date: "`r Sys.Date()`"
+output: distill::distill_article
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+# Publications
+
+Hunt, J. O., Myers, J. N., & Myers, L. A. Improving Earnings Predictions and Abnormal Returns with Machine Learning. *Accounting Horizons*.
+
+Hunt, E., Hunt, J. O., Richardson, V. J., & Rosser, D. Auditor Response to Estimated Misstatement Risk: A Machine Learning Approach. *Accounting Horizons*.
+
+Hunt, J. O., Rosser, D. M., & Rowe, S. P. (2020). Using machine learning to predict auditor switches: How the likelihood of switching affects audit quality among non-switching clients. *Journal of Accounting and Public Policy*, 106785.
+
+# Working Papers
+
+Cunningham, L. M., Hunt, J. O., & Short, J. C. (2021). Appointing Audit Committee Directors.
+
+# Works in Process
+
+I have a few works in process, but I have not decided whether it is smart to post details or not.

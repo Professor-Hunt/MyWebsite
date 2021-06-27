@@ -17,7 +17,7 @@ site: distill::distill_website
 
 ## General Info
 
-I am an assistant professor at [Mississippi State University](https://www.business.msstate.edu/academics/adkerson-school-accountancy) in the accounting department. I teaches accounting systems 2, which is transitioning to an introduction to accounting data analytics, and I teach a masters level accounting data analytics course. I am married with two boys under 2 and I love it 😄 .
+I am an assistant professor at [Mississippi State University](https://www.business.msstate.edu/academics/adkerson-school-accountancy) in the accounting department. I teach an accounting systems 2, which is transitioning to an introduction to accounting data analytics, and I teach a masters level accounting data analytics course. I am married with two boys under 2 and I love it 😄 .
 
 <details>
 
@@ -37,28 +37,10 @@ knitr::include_graphics("My_Boys.png")
 
 </details>
 
-## Education
+## Website Information
 
-#### **University of Arkansas**
+I hope to use this website as a professional/personal website. Professional in the capacity that plan to keep my cv and projects up to date, using the blog to display and discuss what is and is not working in my classes, and post interesting R stuff. BUT...I can not promise I will keep the blog up **😟**
 
-PhD in Accounting \| 2013-2018
+Personal in the capacity that I am including emojis and pictures of my kids. So maybe lighthearted professional **😅**
 
-MS in Analytics and Statistics \| 2017
-
-MS in Accounting \| 2012
-
-#### **Louisiana Tech University**
-
-MAT in Teaching \| 2009-2010
-
-BS in Mathematics \| 2004-2008
-
-## Research Interests
-
-#### **Data Analytics**
-
-Machine Learning, Model evaluation, Robotic Process Automation, and Communication
-
-#### **Accounting**
-
-Earnings/Return Relation, Audit Quality, and Methodology
+# Still Under Construction

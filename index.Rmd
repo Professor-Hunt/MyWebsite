@@ -15,6 +15,10 @@ output:
 site: distill::distill_website
 ---
 
+# MSU CWS CHAMPS!!!
+
+![](images/msu_cws.gif){width="100%"}
+
 ## General Info
 
 I am an assistant professor at [Mississippi State University](https://www.business.msstate.edu/academics/adkerson-school-accountancy) in the accounting department. I teach an accounting systems 2, which is transitioning to an introduction to accounting data analytics, and I teach a masters level accounting data analytics course. I am married with two boys under 2 and I love it 😄 .

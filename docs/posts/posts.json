@@ -13,7 +13,7 @@
     "categories": [],
     "contents": "\r\nCourse Construction\r\nFor my courses I am using resources from the big 4 accounting firms. PWC has a masters course laid out nicely that I am using for my undergraduate course. I am using the course content and adapting some of the exercises and tasks to fit into an undergraduate course. I am planning on using Deloitte’s data analytics course material for my masters level course. I will combine a couple of their courses and pull out some of the content. I will also have to convert the content to R.\r\nAll that being said this post is about the RMarkdown Editor in Rstudio. I am building course websites using the Distill R package. I am new to RMarkdown and I was a little intimidated, but I have caught on quickly in large part due to this button in RStudio\r\n\r\nBefore you click\r\n\r\nAfter you click\r\n\r\nButton\r\nThe button gives you a “normal” text editor for RMarkdown. This makes creating anything from reports to websites VERY easy. If you need to code the document you switch back to RMarkdown default, but if you just want to type and insert pictures etc the text editor is AWESOME 🥳\r\n\r\n\r\n\r\n",
     "preview": {},
-    "last_modified": "2021-06-26T22:41:33-05:00",
+    "last_modified": "2021-10-27T14:14:27-05:00",
     "input_file": {}
   },
   {
@@ -30,7 +30,7 @@
     "categories": [],
     "contents": "\r\nThis is actually my second attempt to build this website :(\r\n\r\n\r\n\r\n",
     "preview": {},
-    "last_modified": "2021-06-18T21:14:40-05:00",
+    "last_modified": "2021-10-27T14:14:27-05:00",
     "input_file": {}
   }
 ]

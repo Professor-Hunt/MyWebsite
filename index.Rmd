@@ -21,7 +21,7 @@ site: distill::distill_website
 
 ## General Info
 
-I am an assistant professor at [Mississippi State University](https://www.business.msstate.edu/academics/adkerson-school-accountancy) in the accounting department. I teach an accounting systems 2, which is transitioning to an introduction to accounting data analytics, and I teach a masters level accounting data analytics course. I am married with two boys under 2 and I love it 😄 .
+I am an assistant professor at [Mississippi State University](https://www.business.msstate.edu/academics/adkerson-school-accountancy) in the accounting department. I teach an accounting systems 2, which is transitioning to an introduction to accounting data analytics, and I teach a masters level accounting data analytics course. I am married with two boys under 2.5 and I love it 😄 .
 
 <details>
 
@@ -43,7 +43,7 @@ knitr::include_graphics("My_Boys.png")
 
 ## Website Information
 
-I hope to use this website as a professional/personal website. Professional in the capacity that plan to keep my cv and projects up to date, using the blog to display and discuss what is and is not working in my classes, and post interesting R stuff. BUT...I can not promise I will keep the blog up **😟**
+I hope to use this website as a professional/personal website. Professional in the capacity that plan to keep my cv and projects up to date. **😟**
 
 Personal in the capacity that I am including emojis and pictures of my kids. So maybe lighthearted professional **😅**
 

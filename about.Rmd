@@ -10,7 +10,7 @@ knitr::opts_chunk$set(echo = FALSE)
 
 ## Website Information
 
-**I hope to use this website as a professional/personal website. Professional in the capacity that plan to keep my cv and projects up to date. I also plan on using the blog to display and discuss what is and is not working in my classes. I also plan to post interesting R stuff. BUT...I can not promise I will keep the blog up 😟**
+**I hope to use this website as a professional/personal website. Professional in the capacity that plan to keep my cv and projects up to date. 😟**
 
 **Personal in the capacity that I am including emojis and pictures of my kids. So maybe lighthearted professional 😕**
 

@@ -87,13 +87,13 @@ Hunt, E., Hunt, J., Richardson, V., & David, R. (2021). Auditor Response to Esti
 
 ### Circulated Work
 
-Cunningham, L., J. Hunt, and J. Short. Appointing audit committee directors.
+Cunningham, L., Hunt, J., and Short, J. Appointing audit committee directors.
+
+Dearden, S., Hunt, E., Hunt, J., and Richardson, V. Combining expert expectations with machine learning: An analysis of bank going concern opinions before and after the financial crisis.
+
+Hunt, E., Hunt, J., and Rosser, D. The effect of lockdowns during the pandemic on audit outcomes.
 
 ### Works in Progress
-
-Dearden, S., Hunt, E., Hunt, J., and Richardson, V. Predicting future bank failure using machine learning techniques.
-
--   Tables made and outline made
 
 Hunt, E., Hunt, J., and Kang, Dae. A Simple Way to Measure Binary Model Fit.
 
@@ -160,6 +160,16 @@ Accounting Horizons -- 2018, 2019
 Accounting Horizons Data Analytics Conference 2019 Scientific Committee Member
 
 Richard C. Adkerson School of Accountancy Curriculum Committee
+
+### Editorial Board
+
+Asked to serve on International Journal of Accounting Information Systems 2022
+
+## Honors
+
+Mississippi State University College of Business undergraduate critical thinking project design 2019
+
+Accounting Information Systems (including topics about technology in accounting)" track for the Best Reviewer's Award HARC 2022
 
 ## PROGRAMMING EXPERIENCE
 

@@ -1,0 +1,8 @@
+---
+title: "Presentations"
+description: |
+  Recent Presentations
+output: distill::distill_article
+---
+
+[Dearden, S., Hunt, E., Hunt, J., and Richardson, V. Combining expert expectations with machine learning: An analysis of bank going concern opinions before and after the financial crisis.](Bank-Failure.html)

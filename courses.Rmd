@@ -17,10 +17,173 @@ Students will use SQLite and DBbrowser for ETL (extraction, transformation, and 
 
 [**ACC 3053 LINK**](https://professor-hunt.github.io/ACC3053/)
 
+### Sample Final Projects
+
+```{=html}
+<style>
+.collapsible {
+  background-color: white;
+  color: #5D1725;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.active, .collapsible:hover {
+  background-color: #555;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: white;
+}
+</style>
+
+<button type="button" class="collapsible">Justin Goolsby</button>
+<div class="content">
+  <p>
+```
+[Justin's Final Project](Presentations/Justin_Goolsby.html)
+
+```{=html}
+<p><iframe src="Presentations/Justin_Goolsby.html" width="100%" height="700pt"></iframe></p>
+```
+
+```{=html}
+</p>
+</div>
+```
+```{=html}
+<button type="button" class="collapsible">McKenzie Chambley</button>
+<div class="content">
+  <p>
+```
+[McKenzie's Final Project](Presentations/McKenzie_Chambley.html)
+
+```{=html}
+<p><iframe src="Presentations/McKenzie_Chambley.html" width="100%" height="700pt"></iframe></p>
+```
+
+```{=html}
+</p>
+</div>
+```
+```{=html}
+<button type="button" class="collapsible">Chad Arthur</button>
+<div class="content">
+  <p>
+```
+[Chad's Final Project](Presentations/Chad_Arthur.html)
+
+```{=html}
+<p><iframe src="Presentations/Chad_Arthur.html" width="100%" height="700pt"></iframe></p>
+```
+
+
+```{=html}
+</p>
+</div>
+```
 # ACC 8143
 
 # Accounting Data Analytics
 
 Students will use R statistical software for ETL (extraction, transformation, and loading data). Specifically, R and RStudio (GUI for R) will be used in conjunction with Tidyverse R packages for advanced manipulation and visualizations. Students will learn to use Git and GitHub. Git and GitHub are extensively used for data analytics in practice. GitHub will show the students the importance of version control and the value of coding with care. Students will also learn Markdown which is a framework for presenting interactive reports, dashboards, and creating websites. Students will use RStudio, GitHub, Markdown, and Distill r package to make a professional website for showcasing their work in the class. This will help students learn the value of presenting information in a business analytics context and presenting their own work for others to see. Using Rstudio the students will learn how popular machine learning algorithms work, the difference between parametric and nonparametric algorithms, supervised and unsupervised algorithms, the bias-variance trade-off, and overfitting and underfitting algorithms with hands on examples in business contexts.
 
-[**ACC 8143 Link**](https://professor-hunt.github.io/ACC8143/)
+[**ACC 8143 LINK**](https://professor-hunt.github.io/ACC8143/)
+
+### Sample Final Projects
+
+```{=html}
+<style>
+.collapsible {
+  background-color: white;
+  color: #5D1725;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.active, .collapsible:hover {
+  background-color: #555;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: white;
+}
+</style>
+
+<button type="button" class="collapsible">Karis Cox</button>
+<div class="content">
+  <p>
+```
+[Karis's Website](https://karis-cox.github.io/My-Website-Project/)
+
+```{=html}
+<p><iframe src="https://karis-cox.github.io/My-Website-Project/" width="100%" height="700pt"></iframe></p>
+```
+
+```{=html}
+</p>
+</div>
+```
+```{=html}
+<button type="button" class="collapsible">Matthew Ferris</button>
+<div class="content">
+  <p>
+```
+[Matthew's Website](https://matthew-ferris.github.io/Website/)
+
+```{=html}
+<p><iframe src="https://matthew-ferris.github.io/Website/" width="100%" height="700pt"></iframe></p>
+```
+```{=html}
+</p>
+</div>
+```
+```{=html}
+<button type="button" class="collapsible">Siwei Jiang</button>
+<div class="content">
+  <p>
+```
+[Siwei's Website](https://siwei-jiang.github.io/mywebsite/)
+
+```{=html}
+<p><iframe src="https://siwei-jiang.github.io/mywebsite/" width="100%" height="700pt"></iframe></p>
+```
+```{=html}
+</p>
+</div>
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+```

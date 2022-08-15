@@ -13,21 +13,19 @@ knitr::opts_chunk$set(echo = FALSE)
 
 # JOSHUA O. S. HUNT, CPA
 
-Richard C. Adkerson School of Accountancy
-
-Mississippi State University
-
-jhunt\@business.msstate.edu
-
 </center>
 
 ------------------------------------------------------------------------
 
 ## ACADEMIC EMPLOYMENT
 
+### Louisiana Tech University, Ruston, LA
+
+Adjunct Instructor: September 2022 - Present.
+
 ### Mississippi State University, Starkville, MS
 
-Assistant Professor: August 2018 -- Present.
+Assistant Professor: August 2018 -- August 2022.
 
 ### University of Arkansas, Fayetteville, AR
 
@@ -121,13 +119,17 @@ Business Analytics
 
 Accounting Information Systems
 
-Cost Accounting
+Cost/Management Accounting
 
 Financial Accounting
 
 ## TEACHING EXPERIENCE
 
 ### Mississippi State University
+
+Accounting Data Analytics - 2021
+
+Accounting Information Systems II -2021, 2022
 
 Accounting Information Systems I -- 2018, 2019, 2020
 

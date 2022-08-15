@@ -736,11 +736,11 @@
             --aside-size:      12px;
             --fig-cap-size:    13px;
             /*-- Main font colors --*/
-            --title-color:     #777777;
-            --header-color:    rgba(93, 23, 37, 0.8);
+            --title-color:     #111111;
+            --header-color:    rgba(0, 47, 139, 0.8);
             --body-color:      rgba(0, 0, 0, 0.8);
             --aside-color:     rgba(0, 0, 0, 0.8);
-            --fig-cap-color:   rgba(189, 214, 230, 0.6);
+            --fig-cap-color:   rgba(255, 0, 0, 0.6);
             /*-- Specify custom fonts ~~~ must be imported above   --*/
             --heading-font:    serif;
             --mono-font:       monospace;
@@ -752,9 +752,9 @@
 
           d-byline {
             --heading-size:    0.6rem;
-            --heading-color:   rgba(93, 23, 37, 0.5);
+            --heading-color:   rgba(0, 47, 139, 0.5);
             --body-size:       0.8rem;
-            --body-color:      rgba(193, 198, 200, 0.8);
+            --body-color:      rgba(0, 0, 0, 0.8);
           }
 
           /*-- ARTICLE TABLE OF CONTENTS --*/
@@ -767,9 +767,9 @@
 
           d-appendix {
             --heading-size:    15px;
-            --heading-color:   rgba(93, 23, 37, 0.65);
+            --heading-color:   rgba(0, 47, 139, 0.65);
             --text-size:       0.8em;
-            --text-color:      rgba(193, 198, 200, 0.5);
+            --text-color:      rgba(0, 0, 0, 0.5);
           }
 
           /*-- WEBSITE HEADER + FOOTER --*/
@@ -777,21 +777,29 @@
 
           .distill-site-header {
             --title-size:       18px;
-            --text-color:       rgba(193, 198, 200, 0.8);
+            --text-color:       rgba(0, 0, 0, 0.8);
             --text-size:        15px;
-            --hover-color:      #777777;
-            --bkgd-color:       #5D1725;
+            --hover-color:      #E31B23;
+            --bkgd-color:       #002F8B;
           }
 
           .distill-site-footer {
-            --text-color:       rgba(193, 198, 200, 0.8);
+            --text-color:       rgba(0, 0, 0, 0.8);
             --text-size:        15px;
-            --hover-color:      #777777;
-            --bkgd-color:       #5D1725;
+            --hover-color:      #E31B23;
+            --bkgd-color:       #002F8B;
           }
 
+
           /*-- Additional custom styles --*/
-          /* Add any additional CSS rules below                      */</style>
+          /* Add any additional CSS rules below                      */
+
+          .darkmode d-article,
+          .darkmode d-appendix,
+          .darkmode body {
+            background-color: #DCDCDC;
+            color: rgba(0, 47, 139, 0.8);
+          }</style>
           <style type="text/css">
           /* base style */
 
@@ -963,6 +971,9 @@
           <input id="distill-search" class="nav-search hidden" type="text" placeholder="Search..."/>
           </div>
           <div class="nav-right">
+          <a>
+          <i class="fas fa-adjust" aria-hidden="true"></i>
+          </a>
           <a href="index.html">Home</a>
           <a href="CV.html">CV</a>
           <a href="courses.html">Courses</a>
@@ -982,7 +993,7 @@
         <div class="d-flex flex-column col-5 align-items-center text-center align-self-center">
           <div class="mx-auto text-center">
             <div class="p-3">
-              <img src="Joshua_Hunt.jpg" style="height:15rem" class="rounded">
+              <img src="joshuahunt.png" style="height:15rem" class="rounded">
             </div>
             <div class="p-2">
               <h1>Joshua O.S. Hunt</h1>
@@ -992,14 +1003,7 @@
               <div id="icon-list">
                 <ul class="list-inline">
                                     <li class="list-inline-item">
-                    <a href=https://www.business.msstate.edu/directory/joh105>
-                      <button type="button" class="btn btn-outline-dark mb-2">
-                        University
-                      </button>
-                    </a>
-                  </li>
-                                    <li class="list-inline-item">
-                    <a href=mailto:jhunt@business.msstate.edu>
+                    <a href=mailto:joshua.o.s.hunt@gmail.com>
                       <button type="button" class="btn btn-outline-dark mb-2">
                         Email
                       </button>
@@ -1029,20 +1033,19 @@
           <div class="my-5" id="content">
             <div id="general-info" class="section level1">
             <h1>General Info</h1>
-            <p>I am an assistant professor at <a
-            href="https://www.business.msstate.edu/academics/adkerson-school-accountancy">Mississippi
-            State University</a> in the accounting department. I teach
-            an accounting systems 2, which is transitioning to an
-            introduction to accounting data analytics, and I teach a
-            masters level accounting data analytics course. I am married
-            with two boys under 2.5 and I love it 😄 .</p>
+            <p>I am an adjunct instructor at <a
+            href="https://business.latech.edu/undergraduate-programs/accounting/">Louisiana
+            Tech University</a> in the accounting department. I teach a
+            management accounting course, which is transitioning to
+            include more data analytics. I am married with two boys (3
+            and 1.5) and I love it 😄 .</p>
             <details>
             <summary>
             Click me to see 😍 My Boys 😍
             </summary>
             <p>
             <div class="figure">
-            <img src="My_Boys.png" alt="loads of fun" width="80%" />
+            <img src="myboys2.png" alt="loads of fun" width="80%" />
             <p class="caption">
             loads of fun
             </p>
@@ -1051,16 +1054,9 @@
             </details>
             <div id="website-information" class="section level2">
             <h2>Website Information</h2>
-            <p>I hope to use this website as a professional/personal
-            website. Professional in the capacity that plan to keep my
-            cv and projects up to date. <strong>😟</strong></p>
-            <p>Personal in the capacity that I am including emojis and
-            pictures of my kids. So maybe lighthearted professional
-            <strong>😅</strong></p>
+            <p>This is my personal website. I hope to update it and grow
+            it into something special, but we will see… 😵</p>
             </div>
-            </div>
-            <div id="still-under-construction" class="section level1">
-            <h1>Still Under Construction</h1>
             </div>
           </div>
         </div>
@@ -1072,7 +1068,7 @@
         <div class="d-flex flex-col">
           <div class="mx-auto">
             <div class="p-3 mt-3 text-center">
-              <img src="Joshua_Hunt.jpg" style="height:15rem" class="rounded">
+              <img src="joshuahunt.png" style="height:15rem" class="rounded">
             </div>
             <div class="p-2 text-center">
               <h1>Joshua O.S. Hunt</h1>
@@ -1082,12 +1078,7 @@
             <div class="row justify-content-center align-items-center">
               <div class="col-8 p-1 text-center">
                 <div class="list-group">
-                                    <a href=https://www.business.msstate.edu/directory/joh105>
-                    <button type="button" class="list-group-item list-group-item-action my-1 rounded">
-                      University
-                    </button>
-                  </a>
-                                    <a href=mailto:jhunt@business.msstate.edu>
+                                    <a href=mailto:joshua.o.s.hunt@gmail.com>
                     <button type="button" class="list-group-item list-group-item-action my-1 rounded">
                       Email
                     </button>
@@ -1108,20 +1099,19 @@
             <div class="p pt-4 px-5">
               <div id="general-info" class="section level1">
               <h1>General Info</h1>
-              <p>I am an assistant professor at <a
-              href="https://www.business.msstate.edu/academics/adkerson-school-accountancy">Mississippi
-              State University</a> in the accounting department. I teach
-              an accounting systems 2, which is transitioning to an
-              introduction to accounting data analytics, and I teach a
-              masters level accounting data analytics course. I am
-              married with two boys under 2.5 and I love it 😄 .</p>
+              <p>I am an adjunct instructor at <a
+              href="https://business.latech.edu/undergraduate-programs/accounting/">Louisiana
+              Tech University</a> in the accounting department. I teach
+              a management accounting course, which is transitioning to
+              include more data analytics. I am married with two boys (3
+              and 1.5) and I love it 😄 .</p>
               <details>
               <summary>
               Click me to see 😍 My Boys 😍
               </summary>
               <p>
               <div class="figure">
-              <img src="My_Boys.png" alt="loads of fun" width="80%" />
+              <img src="myboys2.png" alt="loads of fun" width="80%" />
               <p class="caption">
               loads of fun
               </p>
@@ -1130,16 +1120,9 @@
               </details>
               <div id="website-information" class="section level2">
               <h2>Website Information</h2>
-              <p>I hope to use this website as a professional/personal
-              website. Professional in the capacity that plan to keep my
-              cv and projects up to date. <strong>😟</strong></p>
-              <p>Personal in the capacity that I am including emojis and
-              pictures of my kids. So maybe lighthearted professional
-              <strong>😅</strong></p>
+              <p>This is my personal website. I hope to update it and
+              grow it into something special, but we will see… 😵</p>
               </div>
-              </div>
-              <div id="still-under-construction" class="section level1">
-              <h1>Still Under Construction</h1>
               </div>
             </div>
         </div>
@@ -1153,6 +1136,40 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 
       <!--radix_placeholder_site_after_body-->
+      <script>
+        const darkmodeToggle = document.getElementsByClassName("fas fa-adjust")[0];
+        let theme = localStorage.getItem("theme");
+        
+        if (!theme) {
+          if (window.matchMedia("(prefers-color-scheme: dark)").matches ) {
+            theme = "dark";
+          } else {
+            theme = "light";
+          }
+        }
+        setTheme();
+        
+        function switchTheme() {
+          if (theme === "light") {
+            theme = "dark";
+          } else {
+            theme = "light";
+          }
+          localStorage.setItem("theme", theme);
+          setTheme();
+          console.log(theme);
+        }
+        
+        function setTheme() {
+          if (theme === "dark") {
+            document.body.classList.add('darkmode');
+          } else {
+            document.body.classList.remove('darkmode');
+          }
+        }
+        
+        darkmodeToggle.addEventListener('click', switchTheme)
+        </script>
       <!--/radix_placeholder_site_after_body-->
       <!--radix_placeholder_navigation_after_body-->
       <!--/radix_placeholder_navigation_after_body-->

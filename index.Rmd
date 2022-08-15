@@ -1,11 +1,9 @@
 ---
 title: "Joshua O.S. Hunt"
-image: "Joshua_Hunt.jpg"
+image: "joshuahunt.png"
 links:
-  - label: University
-    url: "https://www.business.msstate.edu/directory/joh105"
   - label: Email
-    url: "mailto:jhunt@business.msstate.edu"
+    url: "mailto:joshua.o.s.hunt@gmail.com"
   - label: ORCID iD
     url: "https://orcid.org/0000-0003-1147-2356"
   - label: GitHub
@@ -17,7 +15,7 @@ site: distill::distill_website
 
 # General Info
 
-I am an assistant professor at [Mississippi State University](https://www.business.msstate.edu/academics/adkerson-school-accountancy) in the accounting department. I teach an accounting systems 2, which is transitioning to an introduction to accounting data analytics, and I teach a masters level accounting data analytics course. I am married with two boys under 2.5 and I love it 😄 .
+I am an adjunct instructor at [Louisiana Tech University](https://business.latech.edu/undergraduate-programs/accounting/) in the accounting department. I teach a management accounting course, which is transitioning to include more data analytics. I am married with two boys (3 and 1.5) and I love it 😄 .
 
 <details>
 
@@ -26,7 +24,7 @@ I am an assistant professor at [Mississippi State University](https://www.busine
 <p>
 
 ```{r My_Boys, echo=FALSE, fig.cap="loads of fun", out.width = '80%'}
-knitr::include_graphics("My_Boys.png")
+knitr::include_graphics("myboys2.png")
 ```
 
 </p>
@@ -35,8 +33,4 @@ knitr::include_graphics("My_Boys.png")
 
 ## Website Information
 
-I hope to use this website as a professional/personal website. Professional in the capacity that plan to keep my cv and projects up to date. **😟**
-
-Personal in the capacity that I am including emojis and pictures of my kids. So maybe lighthearted professional **😅**
-
-# Still Under Construction
+This is my personal website. I hope to update it and grow it into something special, but we will see... 😵

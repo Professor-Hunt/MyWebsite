@@ -9,6 +9,7 @@ navbar:
   logo:
     image: Josh_logo.png
   right:
+    - icon: fas fa-adjust
     - text: "Home"
       href: index.html
     - text: "CV"
@@ -16,5 +17,8 @@ navbar:
     - text: "Courses"
       href: courses.html
   source_url: https://github.com/Professor-Hunt/mywebsite
-output: distill::distill_article
 theme: "theme.css"
+output:
+  distill::distill_article:
+    includes:
+      after_body: "_after_body.html"

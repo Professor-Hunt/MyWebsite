@@ -50,16 +50,17 @@ pre.numberSource code > span > a:first-child::before
   }
 pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
 div.sourceCode
-  {   }
+  { color: #00769e; background-color: #f1f3f5; }
 @media screen {
 pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
+code span { color: #00769e; } /* Normal */
 code span.al { color: #ad0000; } /* Alert */
 code span.an { color: #5e5e5e; } /* Annotation */
-code span.at { } /* Attribute */
+code span.at { color: #657422; } /* Attribute */
 code span.bn { color: #ad0000; } /* BaseN */
 code span.bu { } /* BuiltIn */
-code span.cf { color: #007ba5; } /* ControlFlow */
+code span.cf { color: #00769e; } /* ControlFlow */
 code span.ch { color: #20794d; } /* Char */
 code span.cn { color: #8f5902; } /* Constant */
 code span.co { color: #5e5e5e; } /* Comment */
@@ -73,9 +74,9 @@ code span.fl { color: #ad0000; } /* Float */
 code span.fu { color: #4758ab; } /* Function */
 code span.im { } /* Import */
 code span.in { color: #5e5e5e; } /* Information */
-code span.kw { color: #007ba5; } /* Keyword */
+code span.kw { color: #00769e; } /* Keyword */
 code span.op { color: #5e5e5e; } /* Operator */
-code span.ot { color: #007ba5; } /* Other */
+code span.ot { color: #00769e; } /* Other */
 code span.pp { color: #ad0000; } /* Preprocessor */
 code span.sc { color: #5e5e5e; } /* SpecialChar */
 code span.ss { color: #20794d; } /* SpecialString */
@@ -1030,10 +1031,6 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     margin-top: 1.5em;
   }
 
-  .figure img {
-    width: 100%;
-  }
-
   .figure .caption {
     color: rgba(0, 0, 0, 0.6);
     font-size: 12px;
@@ -1863,6 +1860,12 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
       // hoverable references
       $('span.citation[data-cites]').each(function() {
+        if ($(this).children()[0].nodeName == "D-FOOTNOTE") {
+          var fn = $(this).children()[0]
+          $(this).html(fn.shadowRoot.querySelector("sup"))
+          $(this).id = fn.id
+          fn.remove()
+        }
         var refs = $(this).attr('data-cites').split(" ");
         var refHtml = refs.map(function(ref) {
           return "<p>" + $('#ref-' + ref).html() + "</p>";
@@ -1877,6 +1880,31 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
           placement: 'bottom-start'
         });
       });
+
+      // fix footnotes in tables (#411)
+      // replacing broken distill.pub feature
+      $('table d-footnote').each(function() {
+        // we replace internal showAtNode methode which is triggered when hovering a footnote
+        this.hoverBox.showAtNode = function(node) {
+          // ported from https://github.com/distillpub/template/pull/105/files
+          calcOffset = function(elem) {
+              let x = elem.offsetLeft;
+              let y = elem.offsetTop;
+              // Traverse upwards until an `absolute` element is found or `elem`
+              // becomes null.
+              while (elem = elem.offsetParent && elem.style.position != 'absolute') {
+                  x += elem.offsetLeft;
+                  y += elem.offsetTop;
+              }
+
+              return { left: x, top: y };
+          }
+          // https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/offsetTop
+          const bbox = node.getBoundingClientRect();
+          const offset = calcOffset(node);
+          this.show([offset.left + bbox.width, offset.top + bbox.height]);
+        }
+      })
 
       // clear polling timer
       clearInterval(tid);
@@ -1976,6 +2004,8 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     // mark non-body figures created by knitr chunks as 100% width
     $('.layout-chunk').each(function(i, val) {
       var figures = $(this).find('img, .html-widget');
+      // ignore leaflet img layers (#106)
+      figures = figures.filter(':not(img[class*="leaflet"])')
       if ($(this).attr('data-layout') !== "l-body") {
         figures.css('width', '100%');
       } else {
@@ -1998,7 +2028,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     // get rid of index.html references in header
     if (window.location.protocol !== "file:") {
       $('.distill-site-header a[href]').each(function(i,val) {
-        $(this).attr('href', $(this).attr('href').replace("index.html", "./"));
+        $(this).attr('href', $(this).attr('href').replace(/^index[.]html/, "./"));
       });
     }
 
@@ -2142,11 +2172,11 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     --aside-size:      12px;
     --fig-cap-size:    13px;
     /*-- Main font colors --*/
-    --title-color:     #777777;
-    --header-color:    rgba(93, 23, 37, 0.8);
+    --title-color:     #111111;
+    --header-color:    rgba(0, 47, 139, 0.8);
     --body-color:      rgba(0, 0, 0, 0.8);
     --aside-color:     rgba(0, 0, 0, 0.8);
-    --fig-cap-color:   rgba(189, 214, 230, 0.6);
+    --fig-cap-color:   rgba(255, 0, 0, 0.6);
     /*-- Specify custom fonts ~~~ must be imported above   --*/
     --heading-font:    serif;
     --mono-font:       monospace;
@@ -2158,9 +2188,9 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
   d-byline {
     --heading-size:    0.6rem;
-    --heading-color:   rgba(93, 23, 37, 0.5);
+    --heading-color:   rgba(0, 47, 139, 0.5);
     --body-size:       0.8rem;
-    --body-color:      rgba(193, 198, 200, 0.8);
+    --body-color:      rgba(0, 0, 0, 0.8);
   }
 
   /*-- ARTICLE TABLE OF CONTENTS --*/
@@ -2173,9 +2203,9 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
   d-appendix {
     --heading-size:    15px;
-    --heading-color:   rgba(93, 23, 37, 0.65);
+    --heading-color:   rgba(0, 47, 139, 0.65);
     --text-size:       0.8em;
-    --text-color:      rgba(193, 198, 200, 0.5);
+    --text-color:      rgba(0, 0, 0, 0.5);
   }
 
   /*-- WEBSITE HEADER + FOOTER --*/
@@ -2183,21 +2213,29 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
   .distill-site-header {
     --title-size:       18px;
-    --text-color:       rgba(193, 198, 200, 0.8);
+    --text-color:       rgba(0, 0, 0, 0.8);
     --text-size:        15px;
-    --hover-color:      #777777;
-    --bkgd-color:       #5D1725;
+    --hover-color:      #E31B23;
+    --bkgd-color:       #002F8B;
   }
 
   .distill-site-footer {
-    --text-color:       rgba(193, 198, 200, 0.8);
+    --text-color:       rgba(0, 0, 0, 0.8);
     --text-size:        15px;
-    --hover-color:      #777777;
-    --bkgd-color:       #5D1725;
+    --hover-color:      #E31B23;
+    --bkgd-color:       #002F8B;
   }
 
+
   /*-- Additional custom styles --*/
-  /* Add any additional CSS rules below                      */</style>
+  /* Add any additional CSS rules below                      */
+
+  .darkmode d-article,
+  .darkmode d-appendix,
+  .darkmode body {
+    background-color: #DCDCDC;
+    color: rgba(0, 47, 139, 0.8);
+  }</style>
   <style type="text/css">
   /* base style */
 
@@ -2353,7 +2391,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     color: var(--hover-color, white);
   }</style>
   <!--/radix_placeholder_distill-->
-  <script src="site_libs/header-attrs-2.11/header-attrs.js"></script>
+  <script src="site_libs/header-attrs-2.14/header-attrs.js"></script>
   <script src="site_libs/popper-2.6.0/popper.min.js"></script>
   <link href="site_libs/tippy-6.2.7/tippy.css" rel="stylesheet" />
   <link href="site_libs/tippy-6.2.7/tippy-light-border.css" rel="stylesheet" />
@@ -2388,6 +2426,9 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <input id="distill-search" class="nav-search hidden" type="text" placeholder="Search..."/>
 </div>
 <div class="nav-right">
+<a>
+<i class="fas fa-adjust" aria-hidden="true"></i>
+</a>
 <a href="index.html">Home</a>
 <a href="CV.html">CV</a>
 <a href="courses.html">Courses</a>
@@ -2412,9 +2453,25 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
 <div class="d-article">
 <h1 id="acc-3053-systems-2">ACC 3053 Systems 2</h1>
-<h1 id="introduction-to-accounting-data-analytics">Introduction to Accounting Data Analytics</h1>
-<p>Students will use SQLite and DBbrowser for ETL (extraction, transformation, and loading data). Students will create a relational database with SQLite and use SQL query language to interact within this database. They will also connect this database with R statistical software. Students will use R statistical software for ETL. Specifically, R and RStudio (GUI for R) will be used in conjunction with Tidyverse R packages for basic data manipulation and visualizations. Using R forces students to use critical thinking in order to program and trouble shoot errors. Students will also learn Markdown which is a framework for presenting interactive reports will rich visuals. This will help students learn the value of presenting information in a business analytics context. Excel will be used to compare and contrast R and SQL programming. Students will perform advanced Excel tasks such as, but not limited to, pivot tables, vlookup, nested formulas, and dashboard creation.</p>
-<p><a href="https://professor-hunt.github.io/ACC3053/"><strong>ACC 3053 LINK</strong></a></p>
+<h1 id="introduction-to-accounting-data-analytics">Introduction to
+Accounting Data Analytics</h1>
+<p>Students will use SQLite and DBbrowser for ETL (extraction,
+transformation, and loading data). Students will create a relational
+database with SQLite and use SQL query language to interact within this
+database. They will also connect this database with R statistical
+software. Students will use R statistical software for ETL.
+Specifically, R and RStudio (GUI for R) will be used in conjunction with
+Tidyverse R packages for basic data manipulation and visualizations.
+Using R forces students to use critical thinking in order to program and
+trouble shoot errors. Students will also learn Markdown which is a
+framework for presenting interactive reports will rich visuals. This
+will help students learn the value of presenting information in a
+business analytics context. Excel will be used to compare and contrast R
+and SQL programming. Students will perform advanced Excel tasks such as,
+but not limited to, pivot tables, vlookup, nested formulas, and
+dashboard creation.</p>
+<p><a href="https://professor-hunt.github.io/ACC3053/"><strong>ACC 3053
+LINK</strong></a></p>
 <h3 id="sample-final-projects">Sample Final Projects</h3>
 <style>
 .collapsible {
@@ -2445,14 +2502,16 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <button type="button" class="collapsible">Justin Goolsby</button>
 <div class="content">
   <p>
-<p><a href="Presentations/Justin_Goolsby.html">Justin’s Final Project</a></p>
+<p><a href="Presentations/Justin_Goolsby.html">Justin’s Final
+Project</a></p>
 <p><iframe src="Presentations/Justin_Goolsby.html" width="100%" height="700pt"></iframe></p>
 </p>
 </div>
 <button type="button" class="collapsible">McKenzie Chambley</button>
 <div class="content">
   <p>
-<p><a href="Presentations/McKenzie_Chambley.html">McKenzie’s Final Project</a></p>
+<p><a href="Presentations/McKenzie_Chambley.html">McKenzie’s Final
+Project</a></p>
 <p><iframe src="Presentations/McKenzie_Chambley.html" width="100%" height="700pt"></iframe></p>
 </p>
 </div>
@@ -2465,8 +2524,26 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 </div>
 <h1 id="acc-8143">ACC 8143</h1>
 <h1 id="accounting-data-analytics">Accounting Data Analytics</h1>
-<p>Students will use R statistical software for ETL (extraction, transformation, and loading data). Specifically, R and RStudio (GUI for R) will be used in conjunction with Tidyverse R packages for advanced manipulation and visualizations. Students will learn to use Git and GitHub. Git and GitHub are extensively used for data analytics in practice. GitHub will show the students the importance of version control and the value of coding with care. Students will also learn Markdown which is a framework for presenting interactive reports, dashboards, and creating websites. Students will use RStudio, GitHub, Markdown, and Distill r package to make a professional website for showcasing their work in the class. This will help students learn the value of presenting information in a business analytics context and presenting their own work for others to see. Using Rstudio the students will learn how popular machine learning algorithms work, the difference between parametric and nonparametric algorithms, supervised and unsupervised algorithms, the bias-variance trade-off, and overfitting and underfitting algorithms with hands on examples in business contexts.</p>
-<p><a href="https://professor-hunt.github.io/ACC8143/"><strong>ACC 8143 LINK</strong></a></p>
+<p>Students will use R statistical software for ETL (extraction,
+transformation, and loading data). Specifically, R and RStudio (GUI for
+R) will be used in conjunction with Tidyverse R packages for advanced
+manipulation and visualizations. Students will learn to use Git and
+GitHub. Git and GitHub are extensively used for data analytics in
+practice. GitHub will show the students the importance of version
+control and the value of coding with care. Students will also learn
+Markdown which is a framework for presenting interactive reports,
+dashboards, and creating websites. Students will use RStudio, GitHub,
+Markdown, and Distill r package to make a professional website for
+showcasing their work in the class. This will help students learn the
+value of presenting information in a business analytics context and
+presenting their own work for others to see. Using Rstudio the students
+will learn how popular machine learning algorithms work, the difference
+between parametric and nonparametric algorithms, supervised and
+unsupervised algorithms, the bias-variance trade-off, and overfitting
+and underfitting algorithms with hands on examples in business
+contexts.</p>
+<p><a href="https://professor-hunt.github.io/ACC8143/"><strong>ACC 8143
+LINK</strong></a></p>
 <h3 id="sample-final-projects-1">Sample Final Projects</h3>
 <style>
 .collapsible {
@@ -2497,21 +2574,24 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <button type="button" class="collapsible">Karis Cox</button>
 <div class="content">
   <p>
-<p><a href="https://karis-cox.github.io/My-Website-Project/">Karis’s Website</a></p>
+<p><a href="https://karis-cox.github.io/My-Website-Project/">Karis’s
+Website</a></p>
 <p><iframe src="https://karis-cox.github.io/My-Website-Project/" width="100%" height="700pt"></iframe></p>
 </p>
 </div>
 <button type="button" class="collapsible">Matthew Ferris</button>
 <div class="content">
   <p>
-<p><a href="https://matthew-ferris.github.io/Website/">Matthew’s Website</a></p>
+<p><a href="https://matthew-ferris.github.io/Website/">Matthew’s
+Website</a></p>
 <p><iframe src="https://matthew-ferris.github.io/Website/" width="100%" height="700pt"></iframe></p>
 </p>
 </div>
 <button type="button" class="collapsible">Siwei Jiang</button>
 <div class="content">
   <p>
-<p><a href="https://siwei-jiang.github.io/mywebsite/">Siwei’s Website</a></p>
+<p><a href="https://siwei-jiang.github.io/mywebsite/">Siwei’s
+Website</a></p>
 <p><iframe src="https://siwei-jiang.github.io/mywebsite/" width="100%" height="700pt"></iframe></p>
 </p>
 </div>
@@ -2532,7 +2612,8 @@ for (i = 0; i < coll.length; i++) {
   });
 }
 </script>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
 </div>
@@ -2542,6 +2623,40 @@ for (i = 0; i < coll.length; i++) {
 
 
 <!--radix_placeholder_site_after_body-->
+<script>
+  const darkmodeToggle = document.getElementsByClassName("fas fa-adjust")[0];
+  let theme = localStorage.getItem("theme");
+  
+  if (!theme) {
+    if (window.matchMedia("(prefers-color-scheme: dark)").matches ) {
+      theme = "dark";
+    } else {
+      theme = "light";
+    }
+  }
+  setTheme();
+  
+  function switchTheme() {
+    if (theme === "light") {
+      theme = "dark";
+    } else {
+      theme = "light";
+    }
+    localStorage.setItem("theme", theme);
+    setTheme();
+    console.log(theme);
+  }
+  
+  function setTheme() {
+    if (theme === "dark") {
+      document.body.classList.add('darkmode');
+    } else {
+      document.body.classList.remove('darkmode');
+    }
+  }
+  
+  darkmodeToggle.addEventListener('click', switchTheme)
+  </script>
 <!--/radix_placeholder_site_after_body-->
 <!--radix_placeholder_appendices-->
 <div class="appendix-bottom"></div>

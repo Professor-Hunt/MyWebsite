@@ -3,7 +3,7 @@ title: "Joshua O.S. Hunt"
 image: "joshuahunt.png"
 links:
   - label: Email
-    url: "mailto:joshua.o.s.hunt@gmail.com"
+    url: "mailto:johunt@latech.edu"
   - label: ORCID iD
     url: "https://orcid.org/0000-0003-1147-2356"
   - label: GitHub

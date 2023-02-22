@@ -1,0 +1,433 @@
+---
+title: Machine Learning Technology Complements Auditor Expertise
+author:
+  - name: Stuart Dearden
+    affiliations:
+      - University of Nebraska-Lincoln 
+  - name: Emily<br>Hunt
+    affiliations:
+      - Louisiana Tech University 
+  - name: Joshua Hunt
+    affiliations:
+      - 👀
+  - name: Vernon Richardson
+    affiliations:
+      - University of Arkansas
+format:
+  revealjs: 
+    theme: sky
+preview-links: true
+preload-iframes: true
+slide-number: true
+---
+
+# Teaching {style="text-align: center;"}
+
+## Philosophy {style="text-align: center;"}
+
+::: incremental
+-   Straight forward feedback
+
+-   Projects
+
+-   Writing
+:::
+
+## Introduction to Data Analytics
+
+::: {style="text-align: center;margin-top: 5em"}
+[Example Project](https://professor-hunt.com/Presentations/Justin_Goolsby.html)
+:::
+
+## Accounting Data Analytics
+
+::: {style="text-align: center;margin-top: 5em"}
+[Example Project](https://siwei-jiang.github.io/mywebsite/)
+:::
+
+## Advanced Managerial Accounting
+
+::: {style="text-align: center;margin-top: 5em"}
+[Example Project](https://1drv.ms/x/s!ApEGpRGhRBdrhnCRuDhtz7BDi3vV?e=5pPA5u)
+:::
+
+# Research {style="text-align: center;"}
+
+Machine Learning Technology Complements Auditor Expertise
+
+## Genesis
+
+::: incremental
+-   Grant from University of Arkansas
+
+-   Horse race between models
+
+-   Comparison to auditors
+
+-   Combining ML and auditor expertise
+:::
+
+## Overview
+
+::: incremental
+-   Incorporating machine learning (ML) into audit procedures
+
+-   Potential threat to auditor jobs and the need to evaluate the efficacy of ML in complementing auditor expertise
+
+-   Bank failure prediction is a relevant and complex task for auditors
+:::
+
+## Methodology
+
+::: incremental
+-   ML techniques used for anomaly detection in predicting bank failure
+
+    ::: incremental
+    -   [Isolation Forest]
+
+    -   [One-Class Support Vector Machines]
+    :::
+
+-   Publicly available data and bank call reports
+
+-   Comparison of ML models to auditor-issued Going Concern Opinions (GCOs)
+:::
+
+## Results
+
+::: incremental
+-   ML models compared to GCOs in predicting bank failure show higher Type I error rates of ML models
+    -   [Table 4a] - Crisis
+
+    -   [Table 5a] - Post Crisis
+-   Hybrid approach that combines ML models with GCOs in capturing the same number of bank failures while reducing Type I errors
+    -   [Table 6a] - Crisis and Post Crisis
+-   Implementability
+    -   [Table 7a] - Full Sample
+:::
+
+## Implications/Conclusion
+
+::: incremental
+-   For auditors, audit firms, and regulators
+
+-   Importance of balancing the benefits and limitations of ML in informing audit judgments
+
+-   Need for further research and exploration of ML applications in auditing
+
+-   Encourage continued dialogue and collaboration between auditors, ML experts, and regulators to improve audit quality and effectiveness.
+
+-   THANK YOU 👏
+:::
+
+# Tables
+
+## Table 1 {.scrollable}
+
+**The Frequency of Bank Failure and GCOs by Year**
+
+| [**Year**]{.underline} | [***GCO***]{.underline} | [***BANK_FAILURE***]{.underline} | [**Total Observations**]{.underline} |
+|------------------|------------------|------------------|-------------------|
+| 2003                   | 0                       | 0                                | 23                                   |
+| 2004                   | 0                       | 0                                | 17                                   |
+| 2005                   | 0                       | 0                                | 15                                   |
+| 2006                   | 0                       | 0                                | 18                                   |
+| 2007                   | 0                       | 2                                | 59                                   |
+| 2008                   | 16                      | 22                               | 197                                  |
+| 2009                   | 34                      | 16                               | 293                                  |
+| 2010                   | 34                      | 4                                | 142                                  |
+| 2011                   | 18                      | 1                                | 78                                   |
+| 2012                   | 12                      | 5                                | 42                                   |
+| 2013                   | 3                       | 1                                | 19                                   |
+| 2014                   | 2                       | 0                                | 31                                   |
+| 2015                   | 4                       | 0                                | 15                                   |
+| 2016                   | 0                       | 0                                | 7                                    |
+| 2017                   | 0                       | 0                                | 1                                    |
+| 2018                   | 0                       | 0                                | 0                                    |
+| 2019                   | [0]{.underline}         | [0]{.underline}                  | [1]{.underline}                      |
+| **Total**              | **123**                 | **51**                           | **958**                              |
+
+## Table 2 {.scrollable}
+
+**Summary Statistics**
+
+|                        |                    |                        |                   |                      |                   |
+|------------|------------|------------|------------|------------|------------|
+| [Variable]{.underline} | [Mean]{.underline} | [St. Dev.]{.underline} | [25%]{.underline} | [Median]{.underline} | [75%]{.underline} |
+| *GCO*                  | 0.136              | 0.343                  | 0                 | 0                    | 1                 |
+| *TOTAL_ASSETS*         | 13.592             | 106.720                | 0.300             | 0.718                | 1.827             |
+| *TOTAL_LOANS*          | 7.017              | 49.564                 | 0.215             | 0.513                | 1.357             |
+| *NET_LOANS*            | 6.756              | 48.044                 | 0.208             | 0.485                | 1.237             |
+| *CAP*                  | 0.164              | 1.699                  | 0.087             | 0.101                | 0.120             |
+| *PSLOANS*              | 0.764              | 0.164                  | 0.700             | 0.807                | 0.880             |
+| *NPL*                  | 0.04               | 0.039                  | 0.018             | 0.031                | 0.051             |
+| *CLOANS*               | 1.475              | 10.889                 | 0.021             | 0.056                | 0.189             |
+| *GCOMM*                | 0.111              | 0.092                  | 0.054             | 0.086                | 0.142             |
+| *AO_RE*                | 3.772              | 23.734                 | 0.174             | 0.419                | 1.021             |
+| *GRESTATE*             | 0.012              | 0.202                  | -0.067            | -0.020               | 0.036             |
+| *GLOANS*               | 0.008              | 0.237                  | -0.086            | -0.032               | 0.040             |
+| *DIRECT_LEASEFIN*      | 0.123              | 1.048                  | 0.000             | 0.000                | 156.500           |
+| *LOAN_MIX*             | 0.941              | 0.106                  | 0.945             | 0.972                | 0.989             |
+| *SIZE*                 | 13.71              | 1.755                  | 12.613            | 13.485               | 14.418            |
+| *CA_TA*                | 0.075              | 0.081                  | 0.022             | 0.048                | 0.099             |
+| *RE_TA*                | -0.019             | 0.081                  | -0.040            | 0.000                | 0.025             |
+| *EQ_TA*                | 0.092              | 0.042                  | 0.071             | 0.088                | 0.108             |
+| *ROA*                  | -0.022             | 0.031                  | -0.028            | -0.011               | -0.003            |
+| *LOAN1*                | 0.679              | 0.123                  | 0.623             | 0.697                | 0.758             |
+| *LOAN2*                | 0.856              | 0.370                  | 0.758             | 0.847                | 0.937             |
+| *LOAN3*                | 0.791              | 0.291                  | 0.712             | 0.793                | 0.870             |
+| *LOANQUAL1*            | 0.028              | 0.016                  | 0.018             | 0.025                | 0.035             |
+| *LOANQUAL2*            | 0.025              | 0.030                  | 0.009             | 0.020                | 0.034             |
+| *TOTAL_CAP*            | 0.178              | 1.699                  | 0.102             | 0.116                | 0.134             |
+| *OFF_BS*               | 0.099              | 0.232                  | 0.032             | 0.057                | 0.093             |
+| *UNEARN_NI*            | 673.953            | 3,849.400              | 0                 | 0                    | 202.000           |
+| *TOT_INT_INC*          | 0.389              | 2.577                  | 0.014             | 0.034                | 0.088             |
+| *TOT_NONINT_INC*       | 0.205              | 1.933                  | 0.001             | 0.003                | 0.012             |
+| *NET_INCOME*           | -0.022             | 1.342                  | -0.029            | -0.007               | -0.002            |
+| *TOT_CHRG*             | 0.111              | 0.639                  | 0.003             | 0.010                | 0.036             |
+| *TOT_INT_EXP*          | 0.080              | 0.293                  | 0.004             | 0.012                | 0.032             |
+| *TOT_NONINT_EXP*       | 0.394              | 2.855                  | 0.011             | 0.026                | 0.065             |
+| *LLP*                  | 0.118              | 0.689                  | 0.003             | 0.012                | 0.040             |
+| *NET_INCOME_PRE_OPS*   | -0.021             | 1.346                  | -0.029            | -0.007               | -0.002            |
+| *OREO*                 | 0.282              | 0.124                  | 0.001             | 0.005                | 0.019             |
+| *PUBLIC*               | 0.024              | 0.154                  | 0                 | 0                    | 0                 |
+| *Q2DISCLOSURE*         | 0.018              | 0.132                  | 0                 | 0                    | 0                 |
+| *Q3DISCLOSURE*         | 0.010              | 0.099                  | 0                 | 0                    | 0                 |
+| *Q4DISCLOSURE*         | 0.049              | 0.215                  | 0                 | 0                    | 0                 |
+| *ANYDISCLOSURE*        | 0.103              | 0.304                  | 0                 | 0                    | 0                 |
+
+## Table 3 {.scrollable}
+
+**Difference in Means for Variables in the Testing Dataset**
+
+| *Variables*          | *Avg. for No Failures* | *Avg. for Failures* | *Diff* | *P-value* | *Sig.* | *t-stat* |
+|-----------|-----------|-----------|-----------|-----------|-----------|-----------|
+|                      |                        |                     |        |           |        |          |
+| *GOING_CONCERN*      | 0.10                   | 0.73                | \<     | \<1e-06   | \*\*\* | -9.77    |
+|                      |                        |                     |        |           |        |          |
+| *TOTAL_ASSETS*       | 14289378.56            | 1948048.80          | \>     | 0.00      | \*\*\* | 3.24     |
+|                      |                        |                     |        |           |        |          |
+| *TOTAL_LOANS*        | 7356768.01             | 1343095.98          | \>     | 0.00      | \*\*\* | 3.37     |
+|                      |                        |                     |        |           |        |          |
+| *NET_LOANS*          | 7087610.02             | 1221756.37          | \>     | 0.00      | \*\*\* | 3.40     |
+|                      |                        |                     |        |           |        |          |
+| *CAP*                | 0.17                   | 0.06                | \>     | 0.06      | \*     | 1.87     |
+|                      |                        |                     |        |           |        |          |
+| *PSLOANS*            | 0.76                   | 0.85                | \<     | 0.00      | \*\*\* | -4.68    |
+|                      |                        |                     |        |           |        |          |
+| *NPL*                | 0.04                   | 0.09                | \<     | \<1e-06   | \*\*\* | -7.00    |
+|                      |                        |                     |        |           |        |          |
+| *CILOANS*            | 1555333.97             | 130070.98           | \>     | 0.00      | \*\*\* | 3.70     |
+|                      |                        |                     |        |           |        |          |
+| *GCOMM*              | 0.11                   | 0.07                | \>     | \<1e-06   | \*\*\* | 6.18     |
+|                      |                        |                     |        |           |        |          |
+| *AO_RE*              | 3929048.24             | 1151415.45          | \>     | 0.00      | \*\*   | 3.11     |
+|                      |                        |                     |        |           |        |          |
+| *GRESTATE*           | 0.02                   | -0.06               | \>     | 0.00      | \*\*\* | 5.07     |
+|                      |                        |                     |        |           |        |          |
+| *GLOANS*             | 0.01                   | -0.07               | \>     | 0.00      | \*\*\* | 5.06     |
+|                      |                        |                     |        |           |        |          |
+| *DIRECT_LEASEFIN*    | 130736.70              | 1207.82             | \>     | 0.00      | \*\*\* | 3.51     |
+|                      |                        |                     |        |           |        |          |
+| *LOAN_MIX*           | 0.94                   | 0.98                | \<     | \<1e-06   | \*\*\* | -7.52    |
+|                      |                        |                     |        |           |        |          |
+| *SIZE*               | 13.72                  | 13.49               | \>     | 0.27      |        | 1.12     |
+|                      |                        |                     |        |           |        |          |
+| *CA_TA*              | 0.07                   | 0.10                | \<     | 0.04      | \*\*   | -2.08    |
+|                      |                        |                     |        |           |        |          |
+| *RE_TA*              | -0.02                  | -0.08               | \>     | 0.00      | \*\*   | 3.01     |
+|                      |                        |                     |        |           |        |          |
+| *EQ_TA*              | 0.09                   | 0.05                | \>     | \<1e-06   | \*\*\* | 13.10    |
+|                      |                        |                     |        |           |        |          |
+| *ROA*                | -0.02                  | -0.05               | \>     | \<1e-06   | \*\*\* | 5.83     |
+|                      |                        |                     |        |           |        |          |
+| *LOAN1*              | 0.68                   | 0.69                | \<     | 0.25      |        | -1.16    |
+|                      |                        |                     |        |           |        |          |
+| *LOAN2*              | 0.86                   | 0.83                | \>     | 0.28      |        | 1.08     |
+|                      |                        |                     |        |           |        |          |
+| *LOAN3*              | 0.79                   | 0.75                | \>     | 0.01      | \*     | 2.52     |
+|                      |                        |                     |        |           |        |          |
+| *LOANQUAL1*          | 0.03                   | 0.04                | \<     | 0.00      | \*\*\* | -4.83    |
+|                      |                        |                     |        |           |        |          |
+| *LOANQUAL2*          | 0.02                   | 0.04                | \<     | 0.00      | \*\*\* | -4.50    |
+|                      |                        |                     |        |           |        |          |
+| *TOTAL_CAP*          | 0.19                   | 0.07                | \>     | 0.06      | \*     | 1.87     |
+|                      |                        |                     |        |           |        |          |
+| *OFF_BS*             | 0.10                   | 0.04                | \>     | \<1e-06   | \*\*\* | 7.04     |
+|                      |                        |                     |        |           |        |          |
+| *UNEARN_NI*          | 681.04                 | 555.57              | \>     | 0.57      |        | 0.57     |
+|                      |                        |                     |        |           |        |          |
+| *TOT_INT_INC*        | 406053.27              | 105963.47           | \>     | 0.00      | \*\*   | 3.13     |
+|                      |                        |                     |        |           |        |          |
+| *TOT_NONINT_INC*     | 217061.60              | 9989.75             | \>     | 0.00      | \*\*   | 3.03     |
+|                      |                        |                     |        |           |        |          |
+| *NET_INCOME*         | -18514.78              | -72816.51           | \>     | 0.29      |        | 1.06     |
+|                      |                        |                     |        |           |        |          |
+| *TOT_CHRG*           | 114440.17              | 61662.33            | \>     | 0.06      | \*     | 1.87     |
+|                      |                        |                     |        |           |        |          |
+| *TOT_INT_EXP*        | 81867.56               | 54177.35            | \>     | 0.15      |        | 1.44     |
+|                      |                        |                     |        |           |        |          |
+| *TOT_NONINT_EXP*     | 413646.79              | 66001.55            | \>     | 0.00      | \*\*\* | 3.36     |
+|                      |                        |                     |        |           |        |          |
+| *LLP*                | 120786.51              | 78770.78            | \>     | 0.19      |        | 1.32     |
+|                      |                        |                     |        |           |        |          |
+| *NET_INCOME_PRE_OPS* | -18107.01              | -72816.29           | \>     | 0.29      |        | 1.06     |
+|                      |                        |                     |        |           |        |          |
+| *OREO*               | 28084.30               | 29858.06            | \<     | 0.86      |        | -0.18    |
+|                      |                        |                     |        |           |        |          |
+| *PUBLIC*             | 0.03                   | 0.00                | \>     | 0.00      | \*\*\* | 4.75     |
+|                      |                        |                     |        |           |        |          |
+| *Q2DISCLOSURE*       | 0.02                   | 0.00                | \>     | 0.00      | \*\*\* | 4.04     |
+|                      |                        |                     |        |           |        |          |
+| *Q3DISCLOSURE*       | 0.01                   | 0.04                | \<     | 0.27      |        | -1.12    |
+|                      |                        |                     |        |           |        |          |
+| *Q4DISCLOSURE*       | 0.05                   | 0.02                | \>     | 0.15      |        | 1.47     |
+|                      |                        |                     |        |           |        |          |
+| *ANYDISCLOSURE*      | 0.03                   | 0.00                | \>     | 0.00      | \*\*\* | 4.75     |
+|                      |                        |                     |        |           |        |          |
+
+## Table 4a {.scrollable}
+
+::: {style="text-align: center;"}
+**Auditor GCO vs. Machine Learning Prediction Accuracy** **During Financial Crisis (2007-2009)**
+:::
+
+*Panel A: ML Restricted to number of GCOs*
+
+![](images/image-2107272327.png){width="100%"}
+
+## Table 4b {#table-4-1 .scrollable}
+
+::: {style="text-align: center;"}
+**Auditor GCO vs. Machine Learning Prediction Accuracy** **During Financial Crisis (2007-2009)**
+:::
+
+*Panel B: ML Unrestricted with Optimized Sensitivity and Specificity*
+
+![](images/image-1157145302.png){width="100%"}
+
+## Table 5a
+
+::: {style="text-align: center;"}
+**Auditor GCO vs. Machine Learning Prediction Accuracy** **Post Financial Crisis (2010-2019)**
+:::
+
+*Panel A: ML Restricted to number of GCOs*
+
+![](images/image-311564040.png){width="100%"}
+
+## Table 5b {#table-5-1}
+
+::: {style="text-align: center;"}
+**Auditor GCO vs. Machine Learning Prediction Accuracy** **Post Financial Crisis (2010-2019)**
+:::
+
+*Panel B: ML Unrestricted with Optimized Sensitivity and Specificity*
+
+![](images/image-875225284.png){width="100%"}
+
+[Results]
+
+## Table 6a
+
+::: {style="text-align: center;"}
+**ML within Auditor GCO**
+:::
+
+*Panel A: Crisis Period (07-09)*
+
+![](images/image-998410297.png){width="100%"}
+
+## Table 6b {#table-6-1}
+
+::: {style="text-align: center;"}
+**ML within Auditor GCO**
+:::
+
+*Panel B: Post-Crisis Period (10-19)*
+
+![](images/image-1549723047.png){width="100%"}
+
+[Results]
+
+## Table 7a
+
+::: {style="text-align: center;"}
+**ML within Auditor GCO Implementable**
+:::
+
+*Panel A: Full Sample*
+
+![](images/image-161668572.png){width="100%"}
+
+## Table 7b
+
+::: {style="text-align: center;"}
+**ML within Auditor GCO Implementable**
+:::
+
+*Panel B: Crisis Period (07-09)*
+
+![](images/image-947831258.png){width="100%"}
+
+## Table 7c {#table-7-2}
+
+::: {style="text-align: center;"}
+**ML within Auditor GCO Implementable**
+:::
+
+*Panel C: Post-Crisis Period (10-19)*
+
+![](images/image-1361491393.png){width="100%"}
+
+[Results]
+
+# Paper
+
+[Paper Link](https://1drv.ms/w/s!ApEGpRGhRBdrhnEvlrhXQBHgNRKX?e=bvufHX)
+
+# Isolation Forest
+
+::: incremental
+-   It works by constructing decision trees and isolating instances that are easy to separate from the rest of the data.
+
+-   The instances that require fewer splits to isolate are considered more anomalous.
+
+-   Isolation Forest is efficient and effective for high-dimensional datasets and can handle large amounts of data.
+:::
+
+## Isolation Forest Picture
+
+::: {style="text-align: center;"}
+![](images/image-1549339488.png)
+:::
+
+## Isolation forest Gif
+
+![](images/IForest.gif){fig-align="center" width="100%"}
+
+[Methodology]
+
+# One-Class Support Vector Machines
+
+::: incremental
+-   It is trained on a dataset that contains only normal data.
+
+-   The goal is to identify new data points that are not normal.
+
+-   It is based on the idea of finding a hyperplane that separates the normal data from everything else.
+:::
+
+## OCSVM Picture
+
+::: {style="text-align: center;"}
+![](images/image-1648634068.png){width="38%"}![](images/image-1383423447.png){width="45%"}
+:::
+
+## OCSVM Gif
+
+::: {style="text-align: center;"}
+![](images/ocsvm%20visualization.gif){width="50%"}![](images/image-1257593122.png){width="50%"}
+:::
+
+[Methodology]

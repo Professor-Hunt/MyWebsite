@@ -15,7 +15,7 @@ site: distill::distill_website
 
 # General Info
 
-I am an adjunct instructor at [Louisiana Tech University](https://business.latech.edu/undergraduate-programs/accounting/) in the accounting department. I teach a management accounting course, which is transitioning to include more data analytics. I am married with two boys (3 and 1.5) and I love it 😄 .
+I am an adjunct instructor at [Louisiana Tech University](https://business.latech.edu/undergraduate-programs/accounting/) in the accounting department. I teach a management accounting course, which is transitioning to include more data analytics. I am married with two boys (3.5 and 2) and I love it 😄 .
 
 <details>
 
